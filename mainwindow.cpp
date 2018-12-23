@@ -11,11 +11,10 @@ MainWindow::MainWindow(QWidget *parent) :
     secWindow = new Auto();
     //If secWindow -> baseWindow, so this -> show...
     connect(secWindow, &Auto::baseWindow, this, &MainWindow::show);
-    connect(secWindow, &Auto::SetAuto, this, &MainWindow::SetAutoMode);
-
-
+    connect(secWindow, &Auto::butt2clicked, this, &MainWindow::SetAutoMode);
     thirdWindow = new InformativeWindow();
     connect(thirdWindow, &InformativeWindow::baseWindow, this, &MainWindow::show);
+
 
     timer = new QTimer();
     connect(timer, SIGNAL(timeout()), this, SLOT(timerAlarm()));
@@ -153,7 +152,7 @@ void MainWindow::timerAlarm()
         DWORD cap = batStats.RemainingCapacity;
         double Percent = ((double)cap/(double)batStats.MaxCapacity);
         string on = "background-image: url(:/img/100.png);";
-        string off = "background-image: url(:/img/100.png);";
+        string off = "background-image: url(:/img/b100.png);";
         if(Percent < 0.1 && Percent >= 0)
         {
             on = "background-image: url(:/img/0.png);";
@@ -242,15 +241,15 @@ void MainWindow::on_action_3_triggered() //Default
 {
     ui->horizontalSlider->setValue(50);
     PowerRestoreDefaultPowerSchemes();
-    SetAutoMode(-1,-1,-1,-1);
-
+    secWindow->setDef();
 }
 
 
 void MainWindow::on_action_4_triggered()
 {
+    this->hide();
+    secWindow = new Auto(this);
     secWindow->show();
-    this->close();
 }
 
 void MainWindow::on_pushButton_3_clicked() //default
@@ -331,15 +330,17 @@ void MainWindow::on_pushButton_9_clicked()
     ui->label_9->show();
 }
 
-void MainWindow::SetAutoMode(int elect, int batt, int perc, int low)
+void MainWindow::SetAutoMode()
 {
-    if(elect == -1 && batt == -1 && perc == -1 && low == -1)
+    this->show();
+    int elect = secWindow->getElect();
+    int batt = secWindow->getBatt();
+    int perc = secWindow->getProc();
+    int low = secWindow->getMode();
+
+    if(perc == -2)
     {
-        secWindow->setDef();
-    }
-    else if(perc == -2)
-    {
-        if(batStats.AcOnLine)
+        if(batStats.Charging == TRUE && batStats.AcOnLine == TRUE)
         {
             if(elect == 0)
                 on_pushButton_9_clicked();
@@ -348,7 +349,7 @@ void MainWindow::SetAutoMode(int elect, int batt, int perc, int low)
             if(elect == 2)
                 on_pushButton_7_clicked();
         }
-        if(batStats.AcOnLine == FALSE)
+        if(batStats.Charging == FALSE && batStats.AcOnLine == FALSE)
         {
             if(batt == 0)
                 on_pushButton_9_clicked();
@@ -373,3 +374,9 @@ void MainWindow::SetAutoMode(int elect, int batt, int perc, int low)
     }
 }
 
+
+void MainWindow::on_pushButton_5_clicked()
+{
+    ui->formGroupBox->hide();
+    ui->label->setText("<html><head/><body><p align=\"center\"><span style=\" font-size:16pt;\">Дякуємо за ваш відгук. Його буде розглянуто, очікуйте відповіді.</span></p></body></html>");
+}

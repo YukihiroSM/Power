@@ -16,12 +16,17 @@ public:
     explicit Auto(QWidget *parent = nullptr);
     ~Auto();
     void setDef();
+     int getElect();
+    int getBatt();
+     int getProc();
+     int getMode();
 signals:
     void baseWindow();
-    void SetAuto(int, int, int, int);
+    void butt2clicked();
 private slots:
     void on_pushButton_clicked();
     void on_pushButton2_clicked();
+
 private:
     Ui::Auto *ui;
 };

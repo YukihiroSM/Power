@@ -87,17 +87,17 @@ border:0px;
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>270</x>
-      <y>20</y>
+      <x>260</x>
+      <y>70</y>
       <width>321</width>
-      <height>181</height>
+      <height>308</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
-     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+     <item>
       <widget class="QLabel" name="label">
        <property name="text">
-        <string>Програма &quot;Energy Control&quot; створена для аналізу та керування режимами енергоспоживання на ноутбуці.</string>
+        <string>Програма &quot;Energy Control&quot; створена для управління режимами енергозбереження.</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -115,20 +115,18 @@ border:0px;
       </widget>
      </item>
     </layout>
-    <zorder>label_3</zorder>
-    <zorder>label</zorder>
    </widget>
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>268</y>
-      <width>171</width>
-      <height>41</height>
+      <x>90</x>
+      <y>260</y>
+      <width>51</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="text">
-     <string/>
+     <string>1.9.3</string>
     </property>
    </widget>
   </widget>

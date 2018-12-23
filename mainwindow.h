@@ -37,7 +37,6 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-    void timerAlarmAuto();
 
 private slots:
 
@@ -50,8 +49,6 @@ private slots:
     void on_pushButton_2_clicked();
 
     void timerAlarm();
-
-
 
     bool on_horizontalSlider_valueChanged(int value);
 
@@ -74,13 +71,13 @@ private slots:
     void on_pushButton_8_clicked();
 
     void on_pushButton_9_clicked();
-
-    void SetAutoMode(int, int, int, int);
+    void SetAutoMode();
+    void on_pushButton_5_clicked();
 
 private:
     Ui::MainWindow *ui;
-
-    Auto *secWindow;
+    Ui::Auto *prev;
+    Auto *secWindow = new Auto();
     InformativeWindow *thirdWindow;
     Dialog* fourthWindow;
     QTimer *timer;
@@ -96,5 +93,5 @@ private:
 
     QTimer *timer2;
 };
-
+void SetAutoMode(int, int, int, int);
 #endif // MAINWINDOW_H

@@ -61,3 +61,4 @@ LIBS += \
     -lPowrProf \
     -lPsapi
 
+VERSION = 1.0.5.1
