@@ -101,9 +101,9 @@
    <widget class="QTabWidget" name="tabWidget">
     <property name="geometry">
      <rect>
-      <x>160</x>
+      <x>20</x>
       <y>300</y>
-      <width>591</width>
+      <width>721</width>
       <height>231</height>
      </rect>
     </property>
@@ -257,55 +257,44 @@
      <attribute name="title">
       <string>Автоперемикання</string>
      </attribute>
-     <widget class="QPushButton" name="pushButton_6">
-      <property name="geometry">
-       <rect>
-        <x>200</x>
-        <y>100</y>
-        <width>171</width>
-        <height>71</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Конфігурація</string>
-      </property>
-      <property name="icon">
-       <iconset resource="resources.qrc">
-        <normaloff>:/img/web-settings.png</normaloff>:/img/web-settings.png</iconset>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_3">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>0</y>
-        <width>571</width>
-        <height>91</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Автоперемикання режимів дозволяє спростити та покращити роботу завдяки встановлюваним умовам перемикання режимів.</string>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignCenter</set>
-      </property>
-      <property name="wordWrap">
-       <bool>true</bool>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_7">
-      <property name="geometry">
-       <rect>
-        <x>677</x>
-        <y>9</y>
-        <width>16</width>
-        <height>19</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Автоперемикання режимів дозволяє спростити та покращити роботу завдяки встановлюваним умовам перемикання режимів.</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item alignment="Qt::AlignHCenter">
+       <widget class="QPushButton" name="pushButton_6">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>69</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Конфігурація</string>
+        </property>
+        <property name="icon">
+         <iconset resource="resources.qrc">
+          <normaloff>:/img/web-settings.png</normaloff>:/img/web-settings.png</iconset>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </widget>
     <widget class="QWidget" name="tab_3">
      <attribute name="icon">
@@ -319,9 +308,9 @@
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>110</y>
-        <width>591</width>
-        <height>80</height>
+        <y>120</y>
+        <width>711</width>
+        <height>74</height>
        </rect>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout_6">
@@ -419,8 +408,8 @@
        <rect>
         <x>0</x>
         <y>10</y>
-        <width>591</width>
-        <height>101</height>
+        <width>711</width>
+        <height>105</height>
        </rect>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout_3">
@@ -458,6 +447,13 @@
          </property>
         </widget>
        </item>
+       <item>
+        <widget class="Line" name="line_3">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
        <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
         <widget class="QLabel" name="label_5">
          <property name="sizePolicy">
@@ -471,6 +467,13 @@
          </property>
          <property name="wordWrap">
           <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="Line" name="line_4">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
          </property>
         </widget>
        </item>
@@ -492,32 +495,6 @@
        </item>
       </layout>
      </widget>
-     <widget class="Line" name="line_3">
-      <property name="geometry">
-       <rect>
-        <x>180</x>
-        <y>10</y>
-        <width>20</width>
-        <height>221</height>
-       </rect>
-      </property>
-      <property name="orientation">
-       <enum>Qt::Vertical</enum>
-      </property>
-     </widget>
-     <widget class="Line" name="line_4">
-      <property name="geometry">
-       <rect>
-        <x>380</x>
-        <y>10</y>
-        <width>20</width>
-        <height>221</height>
-       </rect>
-      </property>
-      <property name="orientation">
-       <enum>Qt::Vertical</enum>
-      </property>
-     </widget>
     </widget>
     <widget class="QWidget" name="tab_4">
      <attribute name="title">
@@ -526,7 +503,7 @@
      <widget class="QToolButton" name="toolButton">
       <property name="geometry">
        <rect>
-        <x>30</x>
+        <x>90</x>
         <y>50</y>
         <width>121</width>
         <height>121</height>
@@ -558,7 +535,7 @@
      <widget class="QLabel" name="label_6">
       <property name="geometry">
        <rect>
-        <x>40</x>
+        <x>100</x>
         <y>10</y>
         <width>103</width>
         <height>19</height>
@@ -577,8 +554,8 @@
      <widget class="Line" name="line_8">
       <property name="geometry">
        <rect>
-        <x>160</x>
-        <y>0</y>
+        <x>280</x>
+        <y>-10</y>
         <width>16</width>
         <height>251</height>
        </rect>
@@ -590,8 +567,8 @@
      <widget class="QGroupBox" name="formGroupBox">
       <property name="geometry">
        <rect>
-        <x>190</x>
-        <y>50</y>
+        <x>320</x>
+        <y>40</y>
         <width>321</width>
         <height>121</height>
        </rect>
@@ -606,6 +583,9 @@
        </item>
        <item row="0" column="1">
         <widget class="QLineEdit" name="lineEdit">
+         <property name="dragEnabled">
+          <bool>true</bool>
+         </property>
          <property name="placeholderText">
           <string>Example@ex.com</string>
          </property>
@@ -623,8 +603,17 @@
        </item>
        <item row="2" column="1">
         <widget class="QLineEdit" name="LineEdit">
+         <property name="dragEnabled">
+          <bool>true</bool>
+         </property>
+         <property name="readOnly">
+          <bool>false</bool>
+         </property>
          <property name="placeholderText">
           <string>Віталій</string>
+         </property>
+         <property name="cursorMoveStyle">
+          <enum>Qt::VisualMoveStyle</enum>
          </property>
          <property name="clearButtonEnabled">
           <bool>true</bool>
@@ -655,6 +644,9 @@
          <property name="inputMask">
           <string/>
          </property>
+         <property name="dragEnabled">
+          <bool>true</bool>
+         </property>
          <property name="clearButtonEnabled">
           <bool>true</bool>
          </property>
@@ -665,7 +657,7 @@
      <widget class="QPushButton" name="pushButton_5">
       <property name="geometry">
        <rect>
-        <x>510</x>
+        <x>650</x>
         <y>80</y>
         <width>64</width>
         <height>64</height>
@@ -691,9 +683,9 @@
      <widget class="QLabel" name="label_10">
       <property name="geometry">
        <rect>
-        <x>310</x>
+        <x>390</x>
         <y>10</y>
-        <width>171</width>
+        <width>291</width>
         <height>31</height>
        </rect>
       </property>
@@ -704,7 +696,7 @@
      <widget class="QLabel" name="label">
       <property name="geometry">
        <rect>
-        <x>190</x>
+        <x>330</x>
         <y>28</y>
         <width>321</width>
         <height>161</height>
@@ -720,12 +712,19 @@
        <bool>true</bool>
       </property>
      </widget>
+     <zorder>label</zorder>
+     <zorder>toolButton</zorder>
+     <zorder>label_6</zorder>
+     <zorder>line_8</zorder>
+     <zorder>formGroupBox</zorder>
+     <zorder>pushButton_5</zorder>
+     <zorder>label_10</zorder>
     </widget>
    </widget>
    <widget class="QLabel" name="label_9">
     <property name="geometry">
      <rect>
-      <x>250</x>
+      <x>160</x>
       <y>550</y>
       <width>421</width>
       <height>31</height>
@@ -756,49 +755,9 @@
      <number>-1</number>
     </property>
    </widget>
-   <widget class="QWidget" name="">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>330</y>
-      <width>143</width>
-      <height>201</height>
-     </rect>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout">
-     <item>
-      <widget class="QPushButton" name="pushButton_2">
-       <property name="text">
-        <string>Вихід</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_3">
-       <property name="minimumSize">
-        <size>
-         <width>0</width>
-         <height>20</height>
-        </size>
-       </property>
-       <property name="text">
-        <string>За замовчуванням</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_4">
-       <property name="text">
-        <string>Налаштування</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
    <zorder>tabWidget</zorder>
    <zorder>horizontalLayoutWidget</zorder>
    <zorder>label_9</zorder>
-   <zorder></zorder>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
