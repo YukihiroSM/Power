@@ -1,0 +1,12 @@
+debug/main.o
+debug/mainwindow.o
+debug/dialog.o
+debug/auto.o
+debug/informativewindow.o
+debug/userinfo.o
+debug/qrc_resources.o
+debug/moc_mainwindow.o
+debug/moc_dialog.o
+debug/moc_auto.o
+debug/moc_informativewindow.o
+debug/moc_userinfo.o

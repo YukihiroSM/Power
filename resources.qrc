@@ -1,0 +1,42 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/0.png</file>
+        <file>img/10.png</file>
+        <file>img/20.png</file>
+        <file>img/30.png</file>
+        <file>img/40.png</file>
+        <file>img/50.png</file>
+        <file>img/60.png</file>
+        <file>img/70.png</file>
+        <file>img/80.png</file>
+        <file>img/90.png</file>
+        <file>img/100.png</file>
+        <file>img/152226.png</file>
+        <file>img/178365.png</file>
+        <file>img/182446.png</file>
+        <file>img/b0.png</file>
+        <file>img/b20.png</file>
+        <file>img/b40.png</file>
+        <file>img/b60.png</file>
+        <file>img/b80.png</file>
+        <file>img/b100.png</file>
+        <file>img/battery.png</file>
+        <file>img/cog.png</file>
+        <file>img/creative-idea.png</file>
+        <file>img/icons8-cообщение-облачко-50.png</file>
+        <file>img/icons8-выход-52.png</file>
+        <file>img/icons8-информация-50.png</file>
+        <file>img/icons8-меню-filled-50.png</file>
+        <file>img/icons8-обновить-52.png</file>
+        <file>img/icons8-солнце-50.png</file>
+        <file>img/icons8-солнце-filled-50.png</file>
+        <file>img/plug.png</file>
+        <file>img/plug2.png</file>
+        <file>img/wrench.png</file>
+        <file>img/web-settings.png</file>
+        <file>img/feedback.png</file>
+        <file>img/innovation.png</file>
+        <file>img/processor.png</file>
+        <file>img/scale.png</file>
+    </qresource>
+</RCC>

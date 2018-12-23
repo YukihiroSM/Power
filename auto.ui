@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Auto</class>
+ <widget class="QDialog" name="Auto">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>501</width>
+    <height>612</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Energy Control | Configure</string>
+  </property>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>240</y>
+     <width>251</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Режим, що використовується під час роботи від батареї.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>60</y>
+     <width>311</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Режим, що використовується під час зарядки батареї.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>250</y>
+     <width>121</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/img/battery.png);
+border:0px;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_5">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>400</y>
+     <width>471</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>481</width>
+     <height>121</height>
+    </size>
+   </property>
+   <property name="title">
+    <string>Додаткова опція.</string>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>241</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Якщо заряд батареї менший, за: </string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBox">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>30</y>
+      <width>45</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="wrapping">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="specialValueText">
+     <string>-</string>
+    </property>
+    <property name="minimum">
+     <number>10</number>
+    </property>
+    <property name="maximum">
+     <number>40</number>
+    </property>
+    <property name="singleStep">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>161</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>То буде автоматично увімкнено режим:</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_3">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>80</y>
+      <width>231</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <property name="maxVisibleItems">
+     <number>3</number>
+    </property>
+    <property name="maxCount">
+     <number>3</number>
+    </property>
+    <item>
+     <property name="text">
+      <string>Продуктивність</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>:/res/img/creative-idea.png</normaloff>:/res/img/creative-idea.png</iconset>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Баланс</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>:/res/img/icons8-обновить-52.png</normaloff>:/res/img/icons8-обновить-52.png</iconset>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Енергозбереження</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>:/res/img/152226.png</normaloff>:/res/img/152226.png</iconset>
+     </property>
+    </item>
+   </widget>
+  </widget>
+  <widget class="QComboBox" name="comboBox_2">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>320</y>
+     <width>231</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="currentText">
+    <string>Баланс</string>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <property name="maxVisibleItems">
+    <number>3</number>
+   </property>
+   <property name="maxCount">
+    <number>3</number>
+   </property>
+   <item>
+    <property name="text">
+     <string>Продуктивність</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>:/res/img/creative-idea.png</normaloff>:/res/img/creative-idea.png</iconset>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Баланс</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>:/res/img/icons8-обновить-52.png</normaloff>:/res/img/icons8-обновить-52.png</iconset>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Енергозбереження</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>:/res/img/152226.png</normaloff>:/res/img/152226.png</iconset>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="comboBox_4">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>140</y>
+     <width>231</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <property name="maxVisibleItems">
+    <number>3</number>
+   </property>
+   <property name="maxCount">
+    <number>3</number>
+   </property>
+   <item>
+    <property name="text">
+     <string>Продуктивність</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>:/res/img/creative-idea.png</normaloff>:/res/img/creative-idea.png</iconset>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Баланс</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>:/res/img/icons8-обновить-52.png</normaloff>:/res/img/icons8-обновить-52.png</iconset>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Енергозбереження</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>:/res/img/152226.png</normaloff>:/res/img/152226.png</iconset>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>461</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Налаштування автоматичного стану&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>220</y>
+     <width>481</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>550</y>
+     <width>441</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="pushButton2">
+      <property name="text">
+       <string>Застосувати</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton">
+      <property name="text">
+       <string>Відмінити</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>-20</y>
+     <width>501</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="Line" name="line_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>481</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>70</y>
+     <width>121</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/img/plug2.png);
+border:0px;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

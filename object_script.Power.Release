@@ -1,0 +1,12 @@
+release/main.o
+release/mainwindow.o
+release/dialog.o
+release/auto.o
+release/informativewindow.o
+release/userinfo.o
+release/qrc_resources.o
+release/moc_mainwindow.o
+release/moc_dialog.o
+release/moc_auto.o
+release/moc_informativewindow.o
+release/moc_userinfo.o
