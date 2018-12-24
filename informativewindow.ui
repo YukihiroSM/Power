@@ -93,7 +93,7 @@ border:0px;
       <x>260</x>
       <y>50</y>
       <width>321</width>
-      <height>131</height>
+      <height>308</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
@@ -129,7 +129,7 @@ border:0px;
      </rect>
     </property>
     <property name="text">
-     <string>1.9.7</string>
+     <string>1.9.8</string>
     </property>
    </widget>
   </widget>
