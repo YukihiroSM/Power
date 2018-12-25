@@ -7,6 +7,7 @@
 #include <QTimer>
 #include <QTime>
 #include <QMessageBox>
+#include <QProcess>
 
 #include <Windows.h>
 #include <winnt.h>

@@ -1,25 +1,8 @@
 <RCC>
     <qresource prefix="/">
-        <file>img/0.png</file>
-        <file>img/10.png</file>
-        <file>img/20.png</file>
-        <file>img/30.png</file>
-        <file>img/40.png</file>
-        <file>img/50.png</file>
-        <file>img/60.png</file>
-        <file>img/70.png</file>
-        <file>img/80.png</file>
-        <file>img/90.png</file>
-        <file>img/100.png</file>
         <file>img/152226.png</file>
         <file>img/178365.png</file>
         <file>img/182446.png</file>
-        <file>img/b0.png</file>
-        <file>img/b20.png</file>
-        <file>img/b40.png</file>
-        <file>img/b60.png</file>
-        <file>img/b80.png</file>
-        <file>img/b100.png</file>
         <file>img/battery.png</file>
         <file>img/cog.png</file>
         <file>img/creative-idea.png</file>
@@ -39,5 +22,15 @@
         <file>img/processor.png</file>
         <file>img/scale.png</file>
         <file>img/icons8-бумажный-самолетик-64.png</file>
+        <file>instructions.pdf</file>
+        <file>img/0.png</file>
+        <file>img/25.png</file>
+        <file>img/75.png</file>
+        <file>img/b25.png</file>
+        <file>img/b50.png</file>
+        <file>img/b75.png</file>
+        <file>img/b100.png</file>
+        <file>img/b0.png</file>
+        <file>img/100.png</file>
     </qresource>
 </RCC>

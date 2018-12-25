@@ -1,6 +1,8 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <powersetting.h>
+#include <QDesktopServices>
+#include <QUrl>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -9,9 +11,12 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     //Initializing auto_window
     secWindow = new Auto();
+
     //If secWindow -> baseWindow, so this -> show...
+
     connect(secWindow, &Auto::baseWindow, this, &MainWindow::show);
     connect(secWindow, &Auto::butt2clicked, this, &MainWindow::SetAutoMode);
+
     thirdWindow = new InformativeWindow();
     connect(thirdWindow, &InformativeWindow::baseWindow, this, &MainWindow::show);
 
@@ -153,55 +158,25 @@ void MainWindow::timerAlarm()
         double Percent = ((double)cap/(double)batStats.MaxCapacity);
         string on = "background-image: url(:/img/100.png);";
         string off = "background-image: url(:/img/b100.png);";
-        if(Percent < 0.1 && Percent >= 0)
+        if(Percent < 0.25 && Percent >= 0)
         {
             on = "background-image: url(:/img/0.png);";
             off = "background-image: url(:/img/b0.png);";
         }
-        else if(Percent < 0.2 && Percent >= 0.1)
+        else if(Percent < 0.5 && Percent >= 0.25)
         {
-            on = "background-image: url(:/img/10.png);";
-            off = "background-image: url(:/img/b10.png);";
+            on = "background-image: url(:/img/25.png);";
+            off = "background-image: url(:/img/b25.png);";
         }
-        else if(Percent < 0.3 && Percent >= 0.2)
-        {
-            on = "background-image: url(:/img/20.png);";
-            off = "background-image: url(:/img/b20.png);";
-        }
-        else if(Percent < 0.4 && Percent >= 0.3)
-        {
-            on = "background-image: url(:/img/30.png);";
-            off = "background-image: url(:/img/b30.png);";
-        }
-        else if(Percent < 0.5 && Percent >= 0.4)
-        {
-            on = "background-image: url(:/img/40.png);";
-            off = "background-image: url(:/img/b40.png);";
-        }
-        else if(Percent < 0.6 && Percent >= 0.5)
+        else if(Percent < 0.75 && Percent >= 0.5)
         {
             on = "background-image: url(:/img/50.png);";
             off = "background-image: url(:/img/b50.png);";
         }
-        else if(Percent < 0.7 && Percent >= 0.6)
+        else if(Percent < 1 && Percent >= 0.75)
         {
-            on = "background-image: url(:/img/60.png);";
-            off = "background-image: url(:/img/b60.png);";
-        }
-        else if(Percent < 0.8 && Percent >= 0.7)
-        {
-            on = "background-image: url(:/img/70.png);";
-            off = "background-image: url(:/img/b70.png);";
-        }
-        else if(Percent < 0.9 && Percent >= 0.8)
-        {
-            on = "background-image: url(:/img/80.png);";
-            off = "background-image: url(:/img/b80.png);";
-        }
-        else if(Percent < 1 && Percent >= 0.9)
-        {
-            on = "background-image: url(:/img/90.png);";
-            off = "background-image: url(:/img/b90.png);";
+            on = "background-image: url(:/img/75.png);";
+            off = "background-image: url(:/img/b75.png);";
         }
         else if(Percent == 1)
         {
@@ -283,8 +258,8 @@ void MainWindow::on_action_5_triggered()
 
 void MainWindow::on_action_triggered()
 {
-    fiveWindow->show();
-    this->close();
+
+    //QDesktopServices::openUrl(QUrl("file://instructions.pdf"));
 }
 
 
