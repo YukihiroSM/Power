@@ -258,8 +258,8 @@ void MainWindow::on_action_5_triggered()
 
 void MainWindow::on_action_triggered()
 {
-
-    //QDesktopServices::openUrl(QUrl("file://instructions.pdf"));
+    QString path = QCoreApplication:: applicationDirPath();
+    QDesktopServices::openUrl(QUrl(path + "/instructions.pdf"));
 }
 
 
