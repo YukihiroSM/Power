@@ -24,13 +24,16 @@
         <file>img/icons8-бумажный-самолетик-64.png</file>
         <file>instructions.pdf</file>
         <file>img/0.png</file>
-        <file>img/25.png</file>
-        <file>img/75.png</file>
-        <file>img/b25.png</file>
-        <file>img/b50.png</file>
-        <file>img/b75.png</file>
         <file>img/b100.png</file>
         <file>img/b0.png</file>
         <file>img/100.png</file>
+        <file>img/20.png</file>
+        <file>img/40.png</file>
+        <file>img/60.png</file>
+        <file>img/80.png</file>
+        <file>img/b20.png</file>
+        <file>img/b40.png</file>
+        <file>img/b60.png</file>
+        <file>img/b80.png</file>
     </qresource>
 </RCC>

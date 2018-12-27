@@ -158,25 +158,30 @@ void MainWindow::timerAlarm()
         double Percent = ((double)cap/(double)batStats.MaxCapacity);
         string on = "background-image: url(:/img/100.png);";
         string off = "background-image: url(:/img/b100.png);";
-        if(Percent < 0.25 && Percent >= 0)
+        if(Percent < 0.20 && Percent >= 0)
         {
             on = "background-image: url(:/img/0.png);";
             off = "background-image: url(:/img/b0.png);";
         }
-        else if(Percent < 0.5 && Percent >= 0.25)
+        else if(Percent < 0.4 && Percent >= 0.20)
         {
-            on = "background-image: url(:/img/25.png);";
-            off = "background-image: url(:/img/b25.png);";
+            on = "background-image: url(:/img/20.png);";
+            off = "background-image: url(:/img/b20.png);";
         }
-        else if(Percent < 0.75 && Percent >= 0.5)
+        else if(Percent < 0.6 && Percent >= 0.4)
         {
-            on = "background-image: url(:/img/50.png);";
-            off = "background-image: url(:/img/b50.png);";
+            on = "background-image: url(:/img/40.png);";
+            off = "background-image: url(:/img/b40.png);";
         }
-        else if(Percent < 1 && Percent >= 0.75)
+        else if(Percent < 0.8 && Percent >= 0.6)
         {
-            on = "background-image: url(:/img/75.png);";
-            off = "background-image: url(:/img/b75.png);";
+            on = "background-image: url(:/img/60.png);";
+            off = "background-image: url(:/img/b60.png);";
+        }
+        else if(Percent < 1 && Percent >= 0.8)
+        {
+            on = "background-image: url(:/img/80.png);";
+            off = "background-image: url(:/img/b80.png);";
         }
         else if(Percent == 1)
         {
